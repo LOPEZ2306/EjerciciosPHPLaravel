@@ -1,0 +1,18 @@
+.card {
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.card-title {
+    font-size: 1.25rem; /* Tamaño de fuente ajustado */
+    font-weight: 600;    /* Peso de la fuente para el título */
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;  /* Color de texto más suave */
+    line-height: 1.5;  /* Mejor separación entre las líneas */
+}
+
+.card-body {
+    padding: 20px;  /* Padding más grande para mayor espacio */
+}
