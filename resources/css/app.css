@@ -1,22 +1,12 @@
-.card {
-    border-radius: 8px; /* Bordes redondeados */
+.sticky-note {
+    background-color: #fffae6; /* Amarillo suave */
+    border: 1px solid #e1d800;  /* Borde amarillo */
+    border-radius: 8px;  /* Bordes redondeados */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+    padding: 15px;
+    margin-bottom: 20px;
 }
 
-.card-title {
-    font-size: 1.25rem; /* Tamaño de fuente ajustado */
-    font-weight: 600;    /* Peso de la fuente para el título */
-}
-
-.card-text {
-    font-size: 1rem;
-    color: #555;  /* Color de texto más suave */
-    line-height: 1.5;  /* Mejor separación entre las líneas */
-}
-
-.card-body {
-    padding: 20px;  /* Padding más grande para mayor espacio */
-}
-
-.footer {
-    margin-top: auto; /* Empuja el footer hacia abajo */
+.sticky-note .card-body {
+    padding: 10px;
 }
