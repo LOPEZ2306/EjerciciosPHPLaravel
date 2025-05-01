@@ -45,7 +45,7 @@
                 <div class="card-body">
                     <h3 class="card-title">Gestor de Notas</h3>
                     <p class="card-text">Escribe, organiza y busca tus notas rápidamente. Mantén todo en orden con categorías personalizadas.</p>
-                    <a href="#" class="btn btn-primary">Ir al Gestor</a>  <!-- Agregado enlace -->
+                    <a href="{{ route('notes.index') }}" class="btn btn-primary">Ir al Gestor</a>  <!-- Agregado enlace -->
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@
                 <div class="card-body">
                     <h3 class="card-title">Lista de Tareas</h3>
                     <p class="card-text">Organiza tus tareas, marca las completadas y lleva un control fácil y efectivo de tus pendientes.</p>
-                    <a href="#" class="btn btn-primary">Ir a la Lista</a>  <!-- Agregado enlace -->
+                    <a href="{{ route('tasks.index') }}" class="btn btn-primary">Ir a la Lista</a>  <!-- Agregado enlace -->
                 </div>
             </div>
         </div>
@@ -65,7 +65,7 @@
                 <div class="card-body">
                     <h3 class="card-title">Gestor de Gastos</h3>
                     <p class="card-text">Registra tus gastos, clasifícalos y visualiza resúmenes mensuales para un mejor control financiero.</p>
-                    <a href="#" class="btn btn-primary">Ir al Gestor</a>  <!-- Agregado enlace -->
+                    <a href="{{ route('expenses.index') }}" class="btn btn-primary">Ir al Gestor</a>  <!-- Agregado enlace -->
                 </div>
             </div>
         </div>

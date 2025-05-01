@@ -16,3 +16,7 @@
 .card-body {
     padding: 20px;  /* Padding más grande para mayor espacio */
 }
+
+.footer {
+    margin-top: auto; /* Empuja el footer hacia abajo */
+}
