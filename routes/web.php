@@ -8,6 +8,7 @@ use App\Http\Controllers\PasswordController;
 use App\Http\Controllers\TasksController;
 use App\Http\Controllers\ExpensesController;
 
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -21,7 +22,7 @@ Route::get('/propinas', [TipController::class, 'index'])->name('tips.index');
 Route::get('/propina', [TipController::class, 'index'])->name('tips.index');
 Route::post('/propina', [TipController::class, 'index'])->name('tips.index');
 
-Route::get('/notas/buscar', [NotesController::class, 'search'])->name('notes.search'); // ← Mover esta arriba
+Route::get('/notas/buscar', [NotesController::class, 'search'])->name('notes.search');
 
 Route::get('/notas', [NotesController::class, 'index'])->name('notes.index');
 Route::get('/notas/crear', [NotesController::class, 'create'])->name('notes.create');
@@ -32,5 +33,15 @@ Route::delete('/notas/{note}', [NotesController::class, 'delete'])->name('notes.
 Route::get('/notas/{id}', [NotesController::class, 'show'])->name('notes.show');
 
 
-Route::get('/tareas', [TasksController::class, 'index'])->name('tasks.index');
+Route::get('/tarea/buscar', [TasksController::class, 'search'])->name('tasks.search');
+
+Route::get('/tarea', [TasksController::class, 'index'])->name('tasks.index');
+Route::post('/tarea/{task}/toggle', [TasksController::class, 'toggleCompletion'])->name('tasks.toggle');
+Route::get('/tarea/crear', [TasksController::class, 'create'])->name('tasks.create');
+Route::post('/tarea', [TasksController::class, 'store'])->name('tasks.store');
+Route::get('/tarea/{task}/editar', [TasksController::class, 'edit'])->name('tasks.edit');
+Route::put('/tarea/{task}', [TasksController::class, 'update'])->name('tasks.update');
+Route::delete('/tarea/{task}', [TasksController::class, 'delete'])->name('tasks.delete');
+Route::get('/tarea/{id}', [TasksController::class, 'show'])->name('tasks.show');
+
 Route::get('/gastos', [ExpensesController::class, 'index'])->name('expenses.index');
